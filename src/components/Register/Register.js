@@ -31,7 +31,7 @@ class Register extends React.Component {
         password: this.state.password,
         name: this.state.name
       })
-    }).catch("There was an error")
+    })
       .then(response => response.json())
       .then(user => {
         if (user.id) {
